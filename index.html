@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Aakil - Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="orb-canvas"></canvas>
+    <!-- Custom Cursor Elements -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-text"></div>
+
+    <!-- Particle Animation Container -->
+    <div class="particle-container"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text gradient-text">Mohd Aakil</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#showcase" class="nav-link">Showcase</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <button id="themeToggle" class="theme-toggle-btn magnetic-hover">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero morphing-bg">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title text-reveal">
+                        Hi, I'm <span style="color: yellow;">Mohd Aakil</span> 👋
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I'm a <span class="typing-text"></span>
+                    </h2>
+                    <p class="hero-description text-reveal">
+                        Welcome to my portfolio! I'm a passionate MCA graduate with expertise in MERN stack development,
+                        Java programming, and AI-powered website creation. Let me help you bring your ideas to life!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-advanced hover-glow">Hire Me</a>
+                        <a href="#projects" class="btn btn-secondary btn-advanced hover-glow">View Projects</a>
+                        <a href="https://shorturl.at/Ax5ht" class="btn btn-resume btn-advanced hover-glow">Download
+                            Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card card-3d floating-element">
+                        <div class="profile-image">
+                            <img src="images/aakil2.jpg" alt="Mohd Aakil" class="profile-img">
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">0.1</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Success</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator floating-element">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1 floating-element"></div>
+            <div class="floating-shape shape-2 floating-element"></div>
+            <div class="floating-shape shape-3 floating-element"></div>
+            <div class="floating-shape shape-4 floating-element"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-reveal">About Me 🙋‍♂️</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container card-3d">
+                        <img src="images/aakil2.jpg" alt="About Mohd Aakil" class="about-img">
+                        <div class="experience-badge floating-element">
+                            <span class="exp-years">0</span>
+                            <span class="exp-text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-heading gradient-text">MCA Graduate & Full Stack Developer</h3>
+                    <p class="about-description text-reveal">
+                        I'm a passionate and dedicated MCA graduate with a strong foundation in computer science and
+                        extensive experience in modern web development technologies. My journey in technology has been
+                        driven by curiosity and a desire to create innovative solutions.
+                    </p>
+                    <div class="about-highlights interactive-grid">
+                        <div class="highlight-item grid-item magnetic-hover">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>MCA Graduate with Distinction</span>
+                        </div>
+                        <div class="highlight-item grid-item magnetic-hover">
+                            <i class="fas fa-code"></i>
+                            <span>MERN Stack Specialist</span>
+                        </div>
+                        <div class="highlight-item grid-item magnetic-hover">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-Powered Website Developer</span>
+                        </div>
+                        <div class="highlight-item grid-item magnetic-hover">
+                            <i class="fas fa-brain"></i>
+                            <span>DSA & Problem Solving Expert</span>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card card-3d">
+                            <h4>3+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card card-3d">
+                            <h4>2+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-card card-3d">
+                            <h4>100%</h4>
+                            <p>Success Rate</p>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary btn-advanced">Let's Work Together</a>
+                        <a href="https://shorturl.at/Ax5ht" class="btn btn-outline btn-advanced">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey/Timeline Section -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-reveal">My Journey 🚀</h2>
+                <p class="section-subtitle">A timeline of my academic and professional milestones</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left floating-element">
+                    <div class="timeline-content card-3d">
+                        <h3 class="timeline-title">Bachelor's Degree in Economics</h3>
+                        <span class="timeline-date">2021 - 2023</span>
+                        <p class="timeline-institute">Aligarh Muslim University (AMU)</p>
+                        <p>Graduated with a solid foundation in economics, developing strong analytical and research
+                            skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right floating-element">
+                    <div class="timeline-content card-3d">
+                        <h3 class="timeline-title">Online Tutor</h3>
+                        <span class="timeline-date">2021 - 2022</span>
+                        <p class="timeline-institute">Course Hero</p>
+                        <p>Worked as a subject matter expert, helping students understand complex topics and improving
+                            my own communication skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left floating-element">
+                    <div class="timeline-content card-3d">
+                        <h3 class="timeline-title">Master of Computer Applications (MCA)</h3>
+                        <span class="timeline-date">2023 - 2025</span>
+                        <p class="timeline-institute">Maharshi Dayanand University (MDU), Rohtak</p>
+                        <p>Specialized in advanced computer science topics, including full-stack development,
+                            algorithms, and AI, to build a strong technical career.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right floating-element">
+                    <div class="timeline-content card-3d">
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <span class="timeline-date">Present</span>
+                        <p class="timeline-institute">Open to Opportunities</p>
+                        <p>Actively seeking challenging roles in web development to apply my skills in creating
+                            innovative and impactful web solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Showcase Section -->
+    <section id="interactive-showcase" class="interactive-showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <div class="dynamic-blob"></div>
+                <div class="showcase-text">
+                    <h2 class="glitch" data-text="Interactive UI">Interactive UI</h2>
+                    <p>Experience modern web animations and interactive design, bringing this page to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-reveal">Testimonials 💬</h2>
+                <p class="section-subtitle">What my friends and colleagues say about me</p>
+            </div>
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card card-3d">
+                        <div class="testimonial-author">
+                            <img src="images/izzi.jpg" alt="Friend 1">
+                            <div class="author-info">
+                                <h4>izzi</h4>
+                                <span>Classmate & Friend</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Aakil is a coding machine! His dedication to learning new
+                            technologies is inspiring. We worked on a project together, and his problem-solving skills
+                            saved us countless hours. A true team player."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card card-3d">
+                        <div class="testimonial-author">
+                            <img src="images/deepak.png" alt="Friend 2">
+                            <div class="author-info">
+                                <h4>Deepak</h4>
+                                <span>Collaborator</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"I collaborated with Mohd Aakil on a front-end project, and his
+                            attention to detail is impeccable. He has a great eye for design and can turn complex ideas
+                            into beautiful, functional user interfaces."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card card-3d">
+                        <div class="testimonial-author">
+                            <img src="images/sukh.jpg" alt="Mentor">
+                            <div class="author-info">
+                                <h4>Dr. Sukhvinder Singh</h4>
+                                <span>University Assistant Professor</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Mohd Aakil is a highly motivated student with a deep understanding
+                            of computer science fundamentals. His projects always showcase a blend of creativity and
+                            technical excellence. He has a bright future ahead."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn magnetic-hover"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next-btn magnetic-hover"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-reveal">Skills & Technologies 🧩</h2>
+                <p class="section-subtitle">My technical expertise</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title gradient-text">Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card card-3d magnetic-hover" data-skill="HTML5">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="CSS3">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="JavaScript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%"></div>
+                                </div>
+                                <span>88%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="React">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React.js</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title gradient-text">Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card card-3d magnetic-hover" data-skill="Node.js">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 82%"></div>
+                                </div>
+                                <span>82%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="Express">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Express.js</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="MongoDB">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MongoDB</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 78%"></div>
+                                </div>
+                                <span>78%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="Java">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title gradient-text">Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card card-3d magnetic-hover" data-skill="Git">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git & GitHub</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="VS Code">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="DSA">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Data Structures</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card card-3d magnetic-hover" data-skill="AI">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>AI Integration</h4>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-reveal">Advanced Features Showcase 🎨</h2>
+                <p class="section-subtitle">Demonstrating modern web development techniques</p>
+            </div>
+
+            <!-- Interactive Code Demo -->
+            <div class="code-showcase">
+                <h3 class="gradient-text">Interactive Code Examples</h3>
+                <div class="code-container">
+                    <div class="code-block card-3d">
+                        <div class="code-header">
+                            <span class="code-language">JavaScript</span>
+                            <button class="copy-btn magnetic-hover" onclick="copyCode('js-code')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <pre id="js-code" class="code-content"><code>// Custom Cursor Implementation
+function initCustomCursor() {
+    const cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+    
+    document.body.appendChild(cursor);
+}</code></pre>
+                    </div>
+
+                    <div class="code-block card-3d">
+                        <div class="code-header">
+                            <span class="code-language">CSS</span>
+                            <button class="copy-btn magnetic-hover" onclick="copyCode('css-code')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <pre id="css-code" class="code-content"><code>
+  /* Advanced Animations */
+  const coder = {
+  name: 'Mohd Aakil',
+  location: 'Palwal, India',
+  education: 'MCA (2025)',
+  available: true,
+  traits: ['Hardworking', 'Quick Learner', 'Problem Solver', 'Self-Motivated'],
+  interests: ['Dancing', 'Painting', 'Travelling', 'Coding'],
+  goal: 'To join a tech-driven team and solve real-world problems.',
+  intro() {
+    return `${this.name} | ${this.education} | ${this.location}\nOpen for roles: ${this.available ? 'Yes' : 'No'}\nInterests: ${this.interests.join(', ')}`;
+  }
+};
+
+console.log(coder.intro());
+}
+</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Elements Demo -->
+            <div class="interactive-demo">
+                <h3 class="gradient-text">Interactive Elements</h3>
+                <div class="demo-grid interactive-grid">
+                    <div class="demo-item grid-item card-3d magnetic-hover">
+                        <div class="demo-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h4>Custom Cursor</h4>
+                        <p>Follows mouse with smooth animation and interactive feedback</p>
+                        <div class="demo-status">
+                            <span class="status-dot active"></span>
+                            <span>Active</span>
+                        </div>
+                    </div>
+
+                    <div class="demo-item grid-item card-3d magnetic-hover">
+                        <div class="demo-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h4>Particle System</h4>
+                        <p>Floating particles that react to mouse movement</p>
+                        <div class="demo-status">
+                            <span class="status-dot active"></span>
+                            <span>Active</span>
+                        </div>
+                    </div>
+
+                    <div class="demo-item grid-item card-3d magnetic-hover">
+                        <div class="demo-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h4>3D Transformations</h4>
+                        <p>Cards with realistic 3D hover effects</p>
+                        <div class="demo-status">
+                            <span class="status-dot active"></span>
+                            <span>Active</span>
+                        </div>
+                    </div>
+
+                    <div class="demo-item grid-item card-3d magnetic-hover">
+                        <div class="demo-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h4>Magnetic Hover</h4>
+                        <p>Elements that attract to cursor position</p>
+                        <div class="demo-status">
+                            <span class="status-dot active"></span>
+                            <span>Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <div class="performance-metrics">
+                <h3 class="gradient-text">Performance & Optimization</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card card-3d">
+                        <div class="metric-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="metric-value" id="loadTime">0</div>
+                        <div class="metric-label">Load Time (ms)</div>
+                    </div>
+
+                    <div class="metric-card card-3d">
+                        <div class="metric-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="metric-value" id="memoryUsage">0</div>
+                        <div class="metric-label">Memory Usage (MB)</div>
+                    </div>
+
+                    <div class="metric-card card-3d">
+                        <div class="metric-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="metric-value" id="animations">15+</div>
+                        <div class="metric-label">CSS Animations</div>
+                    </div>
+
+                    <div class="metric-card card-3d">
+                        <div class="metric-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="metric-value" id="jsFeatures">20+</div>
+                        <div class="metric-label">JS Features</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="tech-stack">
+                <h3 class="gradient-text">Technology Stack Used</h3>
+                <div class="tech-grid">
+                    <div class="tech-item magnetic-hover">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item magnetic-hover">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-item magnetic-hover">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item magnetic-hover">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item magnetic-hover">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item magnetic-hover">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Certificates</h2>
+                <p class="section-subtitle">A collection of my notable certificates and achievements.</p>
+            </div>
+            <div class="achievements-grid">
+                <!-- Certificate 1: NCC -->
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="images/certificate-ncc.jpg" alt="NCC Certificate">
+                    </div>
+                    <div class="achievement-content">
+                        <h4>NCC 'B' Certificate</h4>
+                        <p>Awarded by the Ministry of Defence, certifying my training and discipline in the National Cadet Corps.</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: Future Computing Technologies -->
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="images/certificate-ncfctsd.jpg" alt="Future Computing Technologies Conference Certificate">
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Conference Paper Presentation</h4>
+                        <p>Presented a paper on "Sustainable e-waste Management" at the National Conference on Future Computing Technologies.</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 3: Research and Innovation -->
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="images/certificate-icrisd.jpg" alt="Research and Innovation Conference Certificate">
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Conference Paper Presentation</h4>
+                        <p>Presented research on "Cybersecurity Risks in Remote Work Environments" at the International Conference on Research and Innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-reveal">Get In Touch 📲</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card card-3d magnetic-hover">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Delhi NCR, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-card card-3d magnetic-hover">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>mdaakil2@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card card-3d magnetic-hover">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 7599931298</p>
+                        </div>
+                    </div>
+                    <div class="contact-card card-3d magnetic-hover">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Available</h3>
+                            <p>Mon - Fri, 9AM - 6PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-advanced">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="gradient-text">Mohd Aakil</h3>
+                    <p>Full Stack Developer passionate about creating innovative web solutions and AI-powered
+                        applications.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Aakil-alig" target="_blank" class="social-link magnetic-hover"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohdaakil/" target="_blank"
+                            class="social-link magnetic-hover"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/aakilalig" target="_blank" class="social-link magnetic-hover"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/md_aakil_alig/" target="_blank"
+                            class="social-link magnetic-hover"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">AI Integration</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Java Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-envelope"></i> mdaakil2@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 7599931298</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi NCR, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mohd Aakil. All rights reserved.</p>
+                <p>Designed and developed with ❤️ by Mohd Aakil</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top magnetic-hover">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading<span class="loading-dots"></span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

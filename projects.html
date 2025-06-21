@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mohd Aakil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text">Mohd Aakil</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <button id="themeToggle" class="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Projects Section -->
+        <section id="projects" class="projects" style="padding-top: 120px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects 💡</h2>
+                    <p class="section-subtitle">A collection of my best work and experiments.</p>
+                </div>
+
+                <!-- Projects Filter -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="mern">MERN Stack</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- GitHub projects will be loaded here dynamically -->
+                </div>
+                <div class="projects-cta">
+                    <a href="https://github.com/Aakil-alig" target="_blank" class="btn btn-primary">View All on
+                        GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Projects Section -->
+        <section id="other-projects" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Other Notable Projects 🏆</h2>
+                    <p class="section-subtitle">A few more projects I'm proud of.</p>
+                </div>
+                <div class="other-projects-container">
+                    <!-- Project Item 1 -->
+                    <div class="other-project-item">
+                        <div class="project-item-header">
+                            <h4>University Management System</h4>
+                            <span class="project-item-tech">Java & MySQL</span>
+                        </div>
+                        <div class="project-item-body">
+                            <p>A comprehensive desktop application built with Java Swing and MySQL to manage student
+                                records, course enrollment, and faculty information for a university. Features a secure
+                                login system and role-based access for students, faculty, and administrators.</p>
+                        </div>
+                    </div>
+                    <!-- Project Item 2 -->
+                    <div class="other-project-item">
+                        <div class="project-item-header">
+                            <h4>AI-Based Resume Parser</h4>
+                            <span class="project-item-tech">Python & NLP</span>
+                        </div>
+                        <div class="project-item-body">
+                            <p>Developed a Python-based tool that uses Natural Language Processing (NLP) to parse
+                                resumes, extract key information like contact details, skills, and work experience, and
+                                store it in a structured format. This project showcases my ability to apply AI to
+                                real-world data challenges.</p>
+                        </div>
+                    </div>
+                    <!-- Project Item 3 -->
+                    <div class="other-project-item">
+                        <div class="project-item-header">
+                            <h4>Interactive Data Visualization Dashboard</h4>
+                            <span class="project-item-tech">JavaScript & D3.js</span>
+                        </div>
+                        <div class="project-item-body">
+                            <p>A web-based dashboard created with D3.js that visualizes complex datasets with
+                                interactive charts and graphs. Users can filter data dynamically and explore trends,
+                                demonstrating advanced front-end and data visualization skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-btn">&times;</span>
+            <div id="modalBody">
+                <!-- Project details will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mohd Aakil</h3>
+                    <p>Full Stack Developer passionate about creating innovative web solutions and AI-powered
+                        applications.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Aakil-alig" target="_blank" class="social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohdaakil/" target="_blank" class="social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/aakilalig" target="_blank" class="social-link"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/md_aakil_alig/" target="_blank" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-envelope"></i> mdaakil2@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 7599931298</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi NCR, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mohd Aakil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

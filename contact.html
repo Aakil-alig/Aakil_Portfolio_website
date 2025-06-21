@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mohd Aakil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text">Mohd Aakil</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <button id="themeToggle" class="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="contact" style="padding-top: 120px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch 📲</h2>
+                    <p class="section-subtitle">I'm currently available for freelance work and open to discussing new projects. Feel free to reach out!</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-details"><h3>Location</h3><p>Delhi NCR, India</p></div></div>
+                        <div class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-details"><h3>Email</h3><p>mdaakil2@gmail.com</p></div></div>
+                        <div class="contact-card"><div class="contact-icon"><i class="fas fa-phone"></i></div><div class="contact-details"><h3>Phone</h3><p>+91 7599931298</p></div></div>
+                        <div class="contact-card"><div class="contact-icon"><i class="fas fa-clock"></i></div><div class="contact-details"><h3>Available</h3><p>Mon - Fri, 9AM - 6PM</p></div></div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required></div>
+                            <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email" required></div>
+                            <div class="form-group"><input type="text" id="subject" name="subject" placeholder="Subject" required></div>
+                            <div class="form-group"><textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea></div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mohd Aakil</h3>
+                    <p>Full Stack Developer passionate about creating innovative web solutions.</p>
+                     <div class="social-links">
+                        <a href="https://github.com/Aakil-alig" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohdaakil/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/aakilalig" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/md_aakil_alig/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-envelope"></i> mdaakil2@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 7599931298</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi NCR, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mohd Aakil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

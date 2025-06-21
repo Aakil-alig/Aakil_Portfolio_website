@@ -268,7 +268,7 @@ function initAdvancedButtonEffects() {
 
 // 3D Card Tilt Effect
 function init3DCardEffect() {
-    const cards = document.querySelectorAll('.card-3d');
+    const cards = document.querySelectorAll('.card-3d:not(.code-block)');
 
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
@@ -1151,7 +1151,7 @@ function initInteractiveElements() {
     });
 
     // Add tilt effect to cards
-    const cards = document.querySelectorAll('.card-3d');
+    const cards = document.querySelectorAll('.card-3d:not(.code-block)');
 
     cards.forEach(card => {
         card.addEventListener('mousemove', function (e) {

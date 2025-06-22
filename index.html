@@ -496,18 +496,27 @@
                                 <i class="fas fa-copy"></i>
                             </button>
                         </div>
-                        <pre id="js-code" class="code-content"><code>// Custom Cursor Implementation
-function initCustomCursor() {
-    const cursor = document.createElement('div');
-    cursor.className = 'custom-cursor';
-    
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
-    
-    document.body.appendChild(cursor);
-}</code></pre>
+                        <pre id="js-code" class="code-content"><code>// Coder Profile Object
+const coder = {
+  name: 'Mohd Aakil',
+  location: 'Palwal, India',
+  education: 'MCA (2025)',
+  isAvailable: true,
+  skills: [
+    'JavaScript (ES6+)', 
+    'React.js', 
+    'Node.js', 
+    'Java',
+    'AI Integration'
+  ],
+  goal: 'To join a tech-driven team and build innovative solutions.',
+  
+  introduce() {
+    return `Hi, I'm ${this.name} from ${this.location}. I love coding in ${this.skills.join(', ')}.`;
+  }
+};
+
+console.log(coder.introduce());</code></pre>
                     </div>
 
                     <div class="code-block card-3d">
@@ -517,24 +526,28 @@ function initCustomCursor() {
                                 <i class="fas fa-copy"></i>
                             </button>
                         </div>
-                        <pre id="css-code" class="code-content"><code>
-  /* Advanced Animations */
-  const coder = {
-  name: 'Mohd Aakil',
-  location: 'Palwal, India',
-  education: 'MCA (2025)',
-  available: true,
-  traits: ['Hardworking', 'Quick Learner', 'Problem Solver', 'Self-Motivated'],
-  interests: ['Dancing', 'Painting', 'Travelling', 'Coding'],
-  goal: 'To join a tech-driven team and solve real-world problems.',
-  intro() {
-    return `${this.name} | ${this.education} | ${this.location}\nOpen for roles: ${this.available ? 'Yes' : 'No'}\nInterests: ${this.interests.join(', ')}`;
-  }
-};
-
-console.log(coder.intro());
+                        <pre id="css-code" class="code-content"><code>/* Advanced Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
 }
-</code></pre>
+
+.floating-element {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* 3D Card Hover Effect */
+.card-3d:hover {
+    transform: perspective(1000px) 
+               rotateY(10deg) 
+               rotateX(5deg) 
+               scale3d(1.05, 1.05, 1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}</code></pre>
                     </div>
                 </div>
             </div>
